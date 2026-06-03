@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fffaf4;
+  color: #263435;
+}
+
+img {
+  display: block;
+}
+
+.brand-mark {
+  background:
+    radial-gradient(circle at 50% 22%, white 0 4px, transparent 5px),
+    radial-gradient(circle at 36% 42%, white 0 4px, transparent 5px),
+    radial-gradient(circle at 64% 42%, white 0 4px, transparent 5px),
+    radial-gradient(circle at 50% 60%, white 0 8px, transparent 9px),
+    linear-gradient(135deg, #2b8d83, #f07a67);
+}
+
+.hero-bg {
+  background:
+    linear-gradient(90deg, rgba(244, 251, 249, .97) 0%, rgba(244, 251, 249, .9) 30%, rgba(244, 251, 249, .18) 58%, rgba(244, 251, 249, .02) 100%),
+    url("/assets/hero-pet-grooming.png") center right / cover no-repeat;
+}
+
+.feature-bg {
+  background:
+    linear-gradient(135deg, rgba(38, 52, 53, .92), rgba(43, 141, 131, .86)),
+    url("/assets/hero-pet-grooming.png") center / cover no-repeat;
+}
+
+@media (max-width: 920px) {
+  .hero-bg {
+    background:
+      linear-gradient(180deg, rgba(244, 251, 249, .96) 0%, rgba(244, 251, 249, .84) 45%, rgba(244, 251, 249, .25) 100%),
+      url("/assets/hero-pet-grooming.png") center bottom / cover no-repeat;
+  }
+}
