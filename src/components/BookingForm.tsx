@@ -16,6 +16,9 @@ export function BookingForm() {
       method="post"
       onSubmit={handleSubmit}
     >
+      <div className="mb-5">
+        <h3 className="text-2xl font-extrabold text-ink">快速預約</h3>
+      </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <label className="grid gap-2 text-sm font-bold text-muted">
           飼主姓名
@@ -42,6 +45,10 @@ export function BookingForm() {
             <option>皮毛護理</option>
             <option>接送服務</option>
           </select>
+        </label>
+        <label className="grid gap-2 text-sm font-bold text-muted sm:col-span-2">
+          預期到店時間
+          <input className={fieldClass} type="datetime-local" name="arrivalTime" />
         </label>
         <label className="grid gap-2 text-sm font-bold text-muted sm:col-span-2">
           備註

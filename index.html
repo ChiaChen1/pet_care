@@ -673,6 +673,17 @@
       padding: 30px;
     }
 
+    .form-heading {
+      margin-bottom: 20px;
+    }
+
+    .form-heading h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
     .form-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1058,6 +1069,9 @@
             </div>
           </aside>
           <form class="booking-form" action="#" method="post">
+            <div class="form-heading">
+              <h3>快速預約</h3>
+            </div>
             <div class="form-grid">
               <label>
                 飼主姓名
@@ -1084,6 +1098,10 @@
                   <option>皮毛護理</option>
                   <option>接送服務</option>
                 </select>
+              </label>
+              <label class="full">
+                預期到店時間
+                <input type="datetime-local" name="arrivalTime">
               </label>
               <label class="full">
                 備註
